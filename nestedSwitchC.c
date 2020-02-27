@@ -8,7 +8,13 @@ int main () {
          printf("This is part of outer switch\n", a );
          switch(b) {
             case 200:
-               printf("This is part of inner switch\n", a );}}
+               printf("This is part of inner switch\n", a );
+            default:
+               printf("This is part of inner switch default\n");
+         }
+         default:
+               printf("This is part of outer switch default\n");
+   }
    printf("Exact value of a is : %d\n", a );
    printf("Exact value of b is : %d\n", b );
    return 0;}
